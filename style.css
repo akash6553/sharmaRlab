@@ -1,0 +1,264 @@
+* { margin: 0; padding: 0; }
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	background-color: #1245F5;
+
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+height: 80px;
+}
+.logo{
+	font-size: 35px;
+
+	color: white;
+
+	padding: 0 100px;
+	font-weight:bold;
+}
+
+.nav-links{
+
+	float: right;
+	margin-right: 20px;
+}
+
+
+.nav-links li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.nav-links a{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	padding-right:  2px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	display: inline-block;
+}
+a.active,a:hover{
+	background: #1b9bff;
+	border: 1px solid white;
+	transition: .5s
+}
+body{
+	overflow: scroll;
+	background-color: #85F5AC;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.footer{
+	text-align: center;
+  padding: 3px;
+
+  background-color: grey;
+  color: black;
+	font-size: 10px;
+	font-family:'Montserrat', sans-serif
+	font-weight: bold;
+	width: 100%;}
+
+	.image-top{
+		border-top: 10px;
+
+	}
+
+}
+:root{
+	--ff-seriff:'Montserrat', sans-serif;
+}
+html{
+	font-family: var(--ff-seriff)
+}
+.section1{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-bottom: 40px;
+
+}
+.image-prop{
+	float:left;
+	display:inline;
+    overflow: hidden;
+    border-radius: 50%;
+		margin-right: 10px;
+}
+.intro{
+	margin-top: 20px;
+	font-size: 25px;
+	background-color:white;
+}
+
+	.image-top{
+		margin-top: 10px;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+	}
+
+	.heading{
+		background-color:white;
+		decoration:none;
+	}
+
+	.box{
+	  width: 50%;
+	  padding: 10px;
+	  border: 8px solid black;
+overflow-wrap: break-word;
+	border-radius: 5px;}
+
+
+
+	.dec{
+		text-decoration: none;
+	}
+/* for the project */
+	.pbox{
+	  width: 90%;
+	  padding: 10px;
+	  border: 8px solid black;
+	  margin-top: 20px;
+	border-radius: 5px;
+	background-image: url("https://www.dreamstime.com/ecg-example-pathological-lead-rhythm-atrial-fibrillation-pause-real-exam-image218618965");
+	overflow-wrap: break-word;
+	}
+
+	  .pheading1{
+	    background-color: white;
+	    font-weight: bold;
+	    font-size:16;
+	    width: 100%;
+	  margin-top: 20px;
+	  }
+
+
+	.pback{
+	  background-color: #F9919F;
+	  font-weight: bold;
+	  padding-left: 10px;
+	  line-height: 1.5em;
+	}
+	.pheading2{
+		background-color: #1245F5;
+	}
+
+
+	/* Publications*/
+
+	.pbmain{
+		padding-left: 10px;
+		margin-left: 20px;
+		font-weight: bold;
+
+	}
+	.pblist{
+		font-weight: normal;
+	}
+
+	/* table */
+	table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  background-color: #96D4D4;
+	align: center;
+}
+th, td{
+  padding-top: 10px;
+  padding-bottom: 20px;
+	text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+/*collaborators box*/
+.cbox{
+	width: 80%;
+	padding: 10px;
+	border: 8px solid black;
+	margin-top: 20px;
+border-radius: 5px;
+font-size: 20px;
+overflow-wrap: break-word;
+}
+.cbmain{
+	width: 80%;
+
+}
+.cblist{
+	padding-left: 20px;
+}
+.cbpart{
+	font-size: 25px;
+	background-color: white;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media(max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media(max-width: 858px){
+.checkbtn{
+				display: block;
+	}
+	.frontul{
+		position: fixed;
+		width: 100%;
+		height:100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+
+	}
+	.frontli{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+
+	}
+	a:hover,a.active{
+		background: none;
+		color: #0082e6;
+
+	}
+	#check:checked ~ ul{
+		left:0;
+	}
+}
